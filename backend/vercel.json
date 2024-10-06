@@ -1,6 +1,6 @@
 {
     "version" : 2,
-    "name" : "Full Stack",
+    "name" : "Food Delivery",
     "builds" : [
         {
             "src" : "./server.js",
