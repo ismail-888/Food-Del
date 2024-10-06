@@ -1,8 +1,8 @@
 import express from "express";
+const foodRouter = express.Router();
 import { addFood, listFood, removeFood } from "../controllers/foodController.js";
 import multer from "multer";
 
-const foodRouter = express.Router();
 
 // Image Storage Engine
 

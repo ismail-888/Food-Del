@@ -1,7 +1,7 @@
 import express from "express";
+const cartRouter=express.Router()
 import { addToCart,removeFromCart,getCart } from "../controllers/cartController.js";
 import authMiddleware from "../middleware/auth.js";
-const cartRouter=express.Router()
 
 
 cartRouter.post("/add",authMiddleware,addToCart)
