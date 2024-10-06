@@ -5,7 +5,9 @@ import axios from "axios";
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+  // todo change url for deploy
+  // const url = "http://localhost:4000";
+  const url = "https://food-18euvltvi-ismails-projects-5b5d5559.vercel.app";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
