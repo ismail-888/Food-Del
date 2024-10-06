@@ -1,16 +1,14 @@
 {
-    "version" : 2,
-    "name" : "Food Delivery",
-    "builds" : [
-        {
-            "src" : "./server.js",
-            "use" : "@vercel/node"
-        }
+    "version": 2,
+    "name": "Food Delivery",
+    "builds": [
+      {
+        "src": "./server.js",
+        "use": "@vercel/node"
+      }
     ],
-    "routes" : [
-        {
-            "src" : "/(.*)",
-            "dest" : "/"
-        }
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/server.js" },
+      { "src": "/(.*)", "dest": "/server.js" }
     ]
-}
+  }
