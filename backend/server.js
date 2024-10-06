@@ -20,7 +20,10 @@ connectDB();
 
 // api endpoints
 app.use("/api/food", foodRouter);
+
+//todo fix here
 // app.use("/images", express.static("uploads"));
+
 app.use("/api/user", userRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRoute);

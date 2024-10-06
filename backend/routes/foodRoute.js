@@ -5,7 +5,7 @@ import { addFood, listFood, removeFood } from "../controllers/foodController.js"
 
 
 // Image Storage Engine
-
+// todo fix here
 // const storage = multer.diskStorage({
 //   destination: "uploads",
 //   filename: (req, file, cb) => {
@@ -16,6 +16,7 @@ import { addFood, listFood, removeFood } from "../controllers/foodController.js"
 // const upload = multer({ storage: storage });
 
 // foodRouter.post("/add",upload.single("image"), addFood);
+
 foodRouter.get("/list",listFood)
 foodRouter.post("/remove",removeFood)
 
